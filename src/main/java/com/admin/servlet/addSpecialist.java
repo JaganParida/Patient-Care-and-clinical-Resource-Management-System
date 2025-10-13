@@ -16,29 +16,29 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/addSpecialist")
 public class addSpecialist extends HttpServlet {
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
-            throws ServletException, IOException {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
 
-        // Get the specialist name from the request
-        String speciName = req.getParameter("specName");
+		// Get the specialist name from the request
+		String speciName = req.getParameter("specName");
 
-        // Create DAO object for database operations
-        SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
+		// Create DAO object for database operations
+		SpecialistDao dao = new SpecialistDao(DBConnect.getConn());
 
-        // Add the specialist to the database
-        boolean f = dao.addSpecialist(speciName);
+		// Add the specialist to the database
+		boolean f = dao.addSpecialist(speciName);
 
-        // Get the current session
-        HttpSession session = req.getSession();
+		// Get the current session
+		HttpSession session = req.getSession();
 
-        // Set session messages based on operation result
-        if(f) {
-            session.setAttribute("sucMsg", "Specialist added successfully");
-            resp.sendRedirect("admin/index.jsp");
-        } else {
-            session.setAttribute("errorMsg", "Something went wrong on server");
-            resp.sendRedirect("admin/index.jsp");
-        }
-    }
+		// Set session messages based on operation result
+		if (f) {
+			session.setAttribute("sucMsg", "Specialist added successfully");
+			resp.sendRedirect("admin/index.jsp");
+		} else {
+			session.setAttribute("errorMsg", "Something went wrong on server");
+			resp.sendRedirect("admin/index.jsp");
+		}
+	}
 }

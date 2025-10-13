@@ -14,31 +14,31 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/adminLogin")
 public class AdminLogin extends HttpServlet {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
 
-        try {
-            String email = req.getParameter("email");
-            String password = req.getParameter("password");
+		try {
+			String email = req.getParameter("email");
+			String password = req.getParameter("password");
 
-            HttpSession session = req.getSession();
+			HttpSession session = req.getSession();
 
-            if ("admin@gmail.com".equals(email) && "admin".equals(password)) {
-                session.setAttribute("adminObj", new User());
-                resp.sendRedirect("admin/index.jsp");
-            } else {
-                session.setAttribute("errorMsg", "Invalid email or password");
-                resp.sendRedirect("admin.jsp");
-            }
+			if ("admin@gmail.com".equals(email) && "admin".equals(password)) {
+				session.setAttribute("adminObj", new User());
+				resp.sendRedirect("admin/index.jsp");
+			} else {
+				session.setAttribute("errorMsg", "Invalid email or password");
+				resp.sendRedirect("admin.jsp");
+			}
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            HttpSession session = req.getSession();
-            session.setAttribute("errorMsg", "Server error during login");
-            resp.sendRedirect("admin.jsp");
-        }
-    }
+		} catch (Exception e) {
+			e.printStackTrace();
+			HttpSession session = req.getSession();
+			session.setAttribute("errorMsg", "Server error during login");
+			resp.sendRedirect("admin.jsp");
+		}
+	}
 }
