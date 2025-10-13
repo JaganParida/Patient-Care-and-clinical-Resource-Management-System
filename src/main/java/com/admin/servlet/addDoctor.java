@@ -5,7 +5,6 @@ import java.io.IOException;
 import com.dao.DoctorDao;
 import com.db.DBConnect;
 import com.entity.Doctor;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
