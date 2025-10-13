@@ -4,7 +4,6 @@ The **Patient Care and Clinical Resource Management System** is a web-based appl
 Patients can sign up, log in, book appointments, view reports, and manage their profiles. Administrators can manage doctors, monitor patient records, and view feedback. Doctors can access their profiles, manage appointments, and attend to patients effectively.
 
 ---
-
 ## Key Features
 
 - Secure Login and Logout for all users
