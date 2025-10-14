@@ -1,0 +1,12 @@
+# Ignore build output directories
+/target/
+# Ignore IDE files
+/.idea/
+*.iml
+# Ignore Maven and Gradle logs
+mvnw.cmd
+mvnw
+.gradle/
+# Ignore OS files
+.DS_Store
+Thumbs.db
