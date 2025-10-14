@@ -51,7 +51,7 @@ Handles all database operations such as Create, Read, Update, and Delete (CRUD) 
 
 ## Requirements and Tools
 
-- Java (JDK 8 or above)
+- Java (JDK 21)
 - Eclipse IDE
 - MySQL Database
 - JDBC Driver
