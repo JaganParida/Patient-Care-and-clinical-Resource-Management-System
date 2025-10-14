@@ -1,135 +1,133 @@
 package com.entity;
 
 public class Appointments {
-	
-	private int id;
-	private int userId;
-	private String fullName;
-	private String gender;
-	private String age;
-	private String appoinDate;
-	private String email;
-	private String phNo;
-	private String diseases;
-	private int doctorId;
-	private String address;
-	private String status;
 
-	public Appointments() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    private int id;
+    private int userId;
+    private String fullName;
+    private String gender;
+    private String age;
+    private String appoinDate;
+    private String email;
+    private String phNo;
+    private String diseases;
+    private int doctorId;
+    private String address;
+    private String status;
 
-	public Appointments(int userId, String fullName, String gender, String age, String appoinDate, String email,
-			String phNo, String diseases, int doctorId, String address, String status) {
-		super();
-		this.userId = userId;
-		this.fullName = fullName;
-		this.gender = gender;
-		this.age = age;
-		this.appoinDate = appoinDate;
-		this.email = email;
-		this.phNo = phNo;
-		this.diseases = diseases;
-		this.doctorId = doctorId;
-		this.address = address;
-		this.status = status;
-	}
+    public Appointments() {
+        super();
+    }
 
-	public int getId() {
-		return id;
-	}
+    public Appointments(int userId, String fullName, String gender, String age, String appoinDate, String email,
+                        String phNo, String diseases, int doctorId, String address, String status) {
+        super();
+        this.userId = userId;
+        this.fullName = fullName;
+        this.gender = gender;
+        this.age = age;
+        this.appoinDate = appoinDate;
+        this.email = email;
+        this.phNo = phNo;
+        this.diseases = diseases;
+        this.doctorId = doctorId;
+        this.address = address;
+        this.status = status;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public int getUserId() {
-		return userId;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
+    public int getUserId() {
+        return userId;
+    }
 
-	public String getFullName() {
-		return fullName;
-	}
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
-	}
+    public String getFullName() {
+        return fullName;
+    }
 
-	public String getGender() {
-		return gender;
-	}
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
 
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
+    public String getGender() {
+        return gender;
+    }
 
-	public String getAge() {
-		return age;
-	}
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-	public void setAge(String age) {
-		this.age = age;
-	}
+    public String getAge() {
+        return age;
+    }
 
-	public String getAppoinDate() {
-		return appoinDate;
-	}
+    public void setAge(String age) {
+        this.age = age;
+    }
 
-	public void setAppoinDate(String appoinDate) {
-		this.appoinDate = appoinDate;
-	}
+    public String getAppoinDate() {
+        return appoinDate;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setAppoinDate(String appoinDate) {
+        this.appoinDate = appoinDate;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public String getPhNo() {
-		return phNo;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public void setPhNo(String phNo) {
-		this.phNo = phNo;
-	}
+    public String getPhNo() {
+        return phNo;
+    }
 
-	public String getDiseases() {
-		return diseases;
-	}
+    public void setPhNo(String phNo) {
+        this.phNo = phNo;
+    }
 
-	public void setDiseases(String diseases) {
-		this.diseases = diseases;
-	}
+    public String getDiseases() {
+        return diseases;
+    }
 
-	public int getDoctorId() {
-		return doctorId;
-	}
+    public void setDiseases(String diseases) {
+        this.diseases = diseases;
+    }
 
-	public void setDoctorId(int doctorId) {
-		this.doctorId = doctorId;
-	}
+    public int getDoctorId() {
+        return doctorId;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setDoctorId(int doctorId) {
+        this.doctorId = doctorId;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public String getStatus() {
+        return status;
+    }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
