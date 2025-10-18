@@ -89,12 +89,12 @@ section {
   padding: 80px 10%;
 }
 
-.section-header {
+#section-header {
   text-align: center;
   margin-bottom: 60px;
 }
 
-.section-header h2:after {
+#section-header h2:after {
   left: 50%;
   transform: translateX(-50%);
 }
@@ -162,6 +162,7 @@ section {
   height: 30px;
   background-size: 60%;
 }
+
 
 .carousel-indicators button {
   width: 12px;
@@ -942,7 +943,7 @@ section {
 
 <!-- Services Section -->
 <section class="services">
-  <div class="section-header">
+  <div id="section-header">
     <h2>Our Premium Services</h2>
     <p class="section-subtitle">Comprehensive healthcare solutions with cutting-edge technology and compassionate care</p>
   </div>
